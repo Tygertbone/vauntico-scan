@@ -1,0 +1,51 @@
+{
+  "name": "vauntico-scan",
+  "version": "1.0.0",
+  "description": "Autonomous RLS defense, dependency auditing, and endpoint leak detection for Supabase projects.",
+  "type": "module",
+  "bin": {
+    "vauntico-scan": "./bin/vauntico-scan.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "npx tsx src/index.ts",
+    "scan": "npx tsx src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.7",
+    "table": "^6.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  },
+  "keywords": [
+    "supabase",
+    "rls",
+    "security",
+    "audit",
+    "sql",
+    "leak-detection",
+    "cli",
+    "vauntico"
+  ],
+  "license": "MIT",
+  "homepage": "https://vauntico.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vauntico/vauntico-scan"
+  },
+  "bugs": {
+    "url": "https://github.com/vauntico/vauntico-scan/issues"
+  }
+}
